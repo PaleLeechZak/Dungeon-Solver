@@ -1,0 +1,62 @@
+// Model manifest (JSON5).
+//
+// The complete list of model files the game uses, out of the thousands under
+// assets/. The config refers to everything here by id; nothing else is
+// loaded, and the packaging script ships exactly these files (plus the
+// buffers and textures each .gltf names). Paths are relative to "root".
+//
+//   models      static tiles, props, items and weapons (.gltf)
+//   characters  skinned characters with their texture embedded (.glb)
+//   animations  files of animation clips for those characters (.glb)
+//
+// An id the config uses but this file lacks is an error, and so is an entry
+// here that the config does not use: remove what is no longer needed.
+{
+	"root": "assets",
+
+	"models": {
+		"amulet": "amulet.gltf",
+		"banner_shield_blue": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/banner_shield_blue.gltf",
+		"barrel_large": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/barrel_large.gltf",
+		"barrel_small_stack": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/barrel_small_stack.gltf",
+		"box_stacked": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/box_stacked.gltf",
+		"chest": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/chest.gltf",
+		"coin_stack_large": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/coin_stack_large.gltf",
+		"coin_stack_medium": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/coin_stack_medium.gltf",
+		"crate_large": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/crate_large.gltf",
+		"crates_stacked": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/crates_stacked.gltf",
+		"floor_dirt_large": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/floor_dirt_large.gltf",
+		"floor_dirt_large_rocky": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/floor_dirt_large_rocky.gltf",
+		"floor_tile_large": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/floor_tile_large.gltf",
+		"floor_tile_large_rocks": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/floor_tile_large_rocks.gltf",
+		"floor_tile_small_decorated": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/floor_tile_small_decorated.gltf",
+		"floor_wood_large": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/floor_wood_large.gltf",
+		"keg": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/keg.gltf",
+		"key": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/key.gltf",
+		"pillar": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/pillar.gltf",
+		"Skeleton_Blade": "KayKit_Skeletons_1.1_SOURCE/assets/gltf/Skeleton_Blade.gltf",
+		"sword_1handed": "KayKit_Adventurers_2.0_SOURCE/Assets/gltf/sword_1handed.gltf",
+		"sword_shield": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/sword_shield.gltf",
+		"table_medium": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/table_medium.gltf",
+		"table_small_decorated_A": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/table_small_decorated_A.gltf",
+		"wall": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/wall.gltf",
+		"wall_corner": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/wall_corner.gltf",
+		"wall_cracked": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/wall_cracked.gltf",
+		"wall_crossing": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/wall_crossing.gltf",
+		"wall_doorway": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/wall_doorway.gltf",
+		"wall_pillar": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/wall_pillar.gltf",
+		"wall_Tsplit": "KayKit_Dungeon_Pack_1.1_SOURCE/Assets/gltf/wall_Tsplit.gltf"
+	},
+
+	"characters": {
+		"knight": "KayKit_Adventurers_2.0_SOURCE/Characters/gltf/Knight.glb",
+		"skeleton_warrior": "KayKit_Skeletons_1.1_SOURCE/characters/gltf/Skeleton_Warrior.glb"
+	},
+
+	"animations": {
+		"general": "KayKit_Character_Animations_1.1_SOURCE/Animations/gltf/Rig_Medium/Rig_Medium_General.glb",
+		"movement": "KayKit_Character_Animations_1.1_SOURCE/Animations/gltf/Rig_Medium/Rig_Medium_MovementBasic.glb",
+		"melee": "KayKit_Character_Animations_1.1_SOURCE/Animations/gltf/Rig_Medium/Rig_Medium_CombatMelee.glb",
+		"simulation": "KayKit_Character_Animations_1.1_SOURCE/Animations/gltf/Rig_Medium/Rig_Medium_Simulation.glb"
+	}
+}
